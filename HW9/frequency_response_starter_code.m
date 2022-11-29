@@ -1,0 +1,22 @@
+%%
+% OPENING RESISTANCE (Rc=1CM of H2O SL-1)
+% PERIPHERAL RESISTANCE (Rp=0.5CM of H2O SL-1)
+% SHUNTCAPACITACNE (Cs=0.005LCM of H2O-1)
+% LUNG CAPACITACNE (CL=0.2LCM of H2O-1)
+% CHEST WALL CAPACITANCE (CW=0.2LCM of H2O-1)
+
+Rc=0.1;
+Rp= 0.5;
+Cl=.1;
+Cs=0.005;
+
+
+
+b=((Rc*Cs+Rc*Cl+Rp*Cl)/(Cl*Rc*Cs*Rp));
+
+c=1/(Cl*Rc*Cs*Rp);
+
+G=1/(Rc*Cs*Rp);
+
+
+
